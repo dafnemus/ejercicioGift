@@ -34,7 +34,8 @@ const showImage = (image) => {
   let imagen = new Image();
   imagen.src = image;
   let oldDiv = document.getElementById('img');
-  let pokeImage = document.createElement('div').appendChild(imagen);
+  let pokeImage = document.createElement('div').appendChild(imagen)
+  pokeImage.classList.add('pokemon')
   if (oldDiv.children.length > 0) {
     oldDiv.removeChild(oldDiv.children[0]);
   }
