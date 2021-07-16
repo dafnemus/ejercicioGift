@@ -21,10 +21,13 @@ body {
 
 .gallery {
   margin: 50px;
+  width: 700px;
   gap: 9px;
   display: flex;
-  align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
+  position: relative;
+  left: calc(50% - 399px);
 }
 ​form {
   margin-top: 30px;
@@ -56,6 +59,6 @@ button {
 }
 
 .breed {
-  width: 250px;
-  height: 250px;
+  width: 150px;
+  height: 150px;
 }
