@@ -1,0 +1,61 @@
+:root {
+  --black: #1b1b15;
+  --yellow: #ffff00;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  background-color: var(--black);
+}
+
+.logo {
+  width: 194px;
+  position: relative;
+  left: calc(50% - 94px);
+  margin: 15px 0;
+  box-shadow: 3px 3px var(--yellow);
+}
+
+.gallery {
+  margin: 50px;
+  gap: 9px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+​form {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  flex-flow: row nowrap;
+}
+​input {
+  cursor: initial;
+}
+button,
+input {
+  font-size: 1em;
+  cursor: pointer;
+  padding: 1em 1.5em;
+  height: 100%;
+  border: 0.15em solid var(--yellow);
+}
+button {
+  color: var(--yellow);
+  background-color: var(--black);
+}
+​ ​img {
+  margin: 2em 1em;
+  max-width: 33%;
+  max-height: 500px;
+  box-shadow: 5px 5px 10px var(--yellow);
+}
+
+.breed {
+  width: 250px;
+  height: 250px;
+}
