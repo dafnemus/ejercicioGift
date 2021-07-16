@@ -18,9 +18,9 @@ const searchPokemon = () => {
   getBreeApi(getDataUser());
 };
 
-const getBreeApi = (pokemon) => {
+const getBreeApi = async (pokemon) => {
   const API_POCS = 'https://pokeapi.co/api/v2/pokemon/';
-  fetch(API_POCS + pokemon)
+  await fetch(API_POCS + pokemon)
     .then((res) => {
       return res.json();
     })
