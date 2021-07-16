@@ -1,5 +1,3 @@
-
-
 const onSubmit = (e) => {
   console.log('hola');
   e.preventDefault();
@@ -17,7 +15,7 @@ const searchBreed = () => {
 };
 
 const getBreeApi = async (breed) => {
-  const baseUrl = `https://cors-anywhere.herokuapp.com/http://dog.ceo/api/breed/${breed}/images/random/3`;
+  const baseUrl = `https://dog.ceo/api/breed/${breed}/images/random/3`;
 
   await fetch(baseUrl)
     .then((res) => {
