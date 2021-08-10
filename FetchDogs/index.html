@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="main.css">
+    <title>Fetch | Breed</title>
+</head>
+
+<body>
+    <img class="logo" src="./perro2.jpg" alt="perro">
+    <form id="form">
+        <input type="text" placeholder="breed" required name="breed" id="breed" />
+        <input type="number" placeholder="photos(1-100)" name="photos" id="photos">
+        <button id="button" onclick="searchBreed()" type="submit">Fetch Breed</button>
+    </form>
+    <div class="gallery" id="img">
+    </div>
+    <script src="./app.js"></script>
+</body>
+
+</html>
